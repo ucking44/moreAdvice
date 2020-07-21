@@ -61,8 +61,6 @@ class BannerController extends Controller
         $banner->name = $request->input('name');
         $banner->schedule = $request->input('schedule');
         $banner->logo = $filenameToStore;
-        //dd($banner);
-
         $banner->save();
 
         return redirect()->back()->with('status', 'Data Added Successfully');
@@ -125,83 +123,3 @@ class BannerController extends Controller
         return redirect()->back()->with('status', 'Data Deleted Successfully');
     }
 }
-
-//     $this->validate($request, [
-    //         'name'        => 'required',
-    //         'schedule' => 'required',
-    //         'logo'       => 'required|mimes:jpeg,bmp,png,jpg',
-    //     ]);
-
-    // $image = $request->file('image');
-    //     if(isset($image))
-    //     {
-    //         $currentDate = Carbon::now()->toDateString();
-    //         // $imagename = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
-
-    //         if(!Storage::disk('public')->exists('logos'))
-    //         {
-    //             Storage::disk('public')->makeDirectory('logos');
-    //         }
-
-    //         $banner = Image::make($image->getRealPath())->resize(1600,479)->save('jpg', 'png', 'jpeg', 'bmp');
-    //         //$category->save('jpg', 'png', 'jpeg', 'bmp');
-    //         Storage::disk('public')->put('logos/'.$imagename,$banner);
-
-    //         if(!Storage::disk('public')->exists('logos/slider'))
-    //         {
-    //             Storage::disk('public')->makeDirectory('logos/slider');
-    //         }
-
-    //         $slider = Image::make($image->getRealPath())->resize(500,333)->save('jpg', 'png', 'jpeg', 'bmp');
-    //         Storage::disk('public')->put('logos/slider/'.$imagename,$slider);
-
-
-    //     } else {
-    //         $imagename = "default.png";
-    //     }
-
-    //     $banner->name = $request->name;
-    //     $banner->logo = $imagename;
-    //     $banner->schedule = $request->input('schedule');
-    //     $banner->update();
-
-
-    //$this->validate($request, [
-        //         'name'        => 'required',
-        //         'schedule' => 'required',
-        //         'logo'       => 'required|mimes:jpeg,bmp,png,jpg',
-        //     ]);
-
-        // $image = $request->file('image');
-        //     if(isset($image))
-        //     {
-        //         $currentDate = Carbon::now()->toDateString();
-        //         // $imagename = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
-
-        //         if(!Storage::disk('public')->exists('logos'))
-        //         {
-        //             Storage::disk('public')->makeDirectory('logos');
-        //         }
-
-        //         $banner = Image::make($image->getRealPath())->resize(1600,479)->save('jpg', 'png', 'jpeg', 'bmp');
-        //         //$category->save('jpg', 'png', 'jpeg', 'bmp');
-        //         Storage::disk('public')->put('logos/'.$imagename,$banner);
-
-        //         if(!Storage::disk('public')->exists('logos/slider'))
-        //         {
-        //             Storage::disk('public')->makeDirectory('logos/slider');
-        //         }
-
-        //         $slider = Image::make($image->getRealPath())->resize(500,333)->save('jpg', 'png', 'jpeg', 'bmp');
-        //         Storage::disk('public')->put('logos/slider/'.$imagename,$slider);
-
-
-        //     } else {
-        //         $imagename = "default.png";
-        //     }
-
-        //     $banner = new Banner();
-        //     $banner->name = $request->name;
-        //     $banner->logo = $imagename;
-        //     $banner->schedule = $request->input('schedule');
-        //     $banner->save();
