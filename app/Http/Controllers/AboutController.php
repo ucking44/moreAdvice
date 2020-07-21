@@ -15,10 +15,6 @@ class AboutController extends Controller
 {
     public function index()
     {
-        // $about = About::all();
-        // $news = News::all();
-        // $banner = Banner::all();
-        // $media = Media::all();
         $about = About::all();
         return view('about', compact('about'));
     }

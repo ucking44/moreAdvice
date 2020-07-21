@@ -15,6 +15,9 @@ class MediaController extends Controller
      */
     public function index()
     {
+        // $about = About::all();
+        // $news = News::all();
+        // $banner = Banner::all();
         $background = Background::all();
         $media = Media::all();
         return view('background', compact('media', 'backround'));

@@ -19,6 +19,9 @@ class BannerController extends Controller
      */
     public function index()
     {
+        // $about = About::all();
+        // $news = News::all();
+        // $banner = Banner::all();
         //$media = Media::all();
         //$background = Background::all();
         $banner = Banner::all();
