@@ -23,6 +23,5 @@ class AuthorMiddleware
         else {
             return redirect('/home')->with('status', 'You Are Not Allowed To Access The Author About Page');
         }
-        //return $next($request);
     }
 }

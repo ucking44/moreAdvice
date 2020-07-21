@@ -22,14 +22,6 @@
                 <label for="recipient-name" class="col-form-label">Name:</label>
                 <input type="text" name="name" class="form-control" id="recipient-name">
                 </div>
-                {{-- <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Sub-Title:</label>
-                    <input type="text" name="subtitle" class="form-control" id="recipient-name">
-                </div>
-                <div class="form-group">
-                <label for="message-text" class="col-form-label">Description:</label>
-                <textarea name="description" class="form-control" id="message-text"></textarea>
-                </div> --}}
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

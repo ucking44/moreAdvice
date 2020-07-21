@@ -20,14 +20,6 @@
                         <label for="recipient-name" class="col-form-label">Name:</label>
                         <input type="text" name="name" class="form-control" value="{{ $background->name }}">
                         </div>
-                        {{-- <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Sub-Title:</label>
-                            <input type="text" name="subtitle" class="form-control" value="{{ $background->subtitle }}">
-                        </div>
-                        <div class="form-group">
-                        <label for="message-text" class="col-form-label">Description:</label>
-                        <textarea name="description" class="form-control" rows="6" cols="5">{{ $background->description }}</textarea>
-                        </div> --}}
                     </div>
                     <div class="modal-footer">
                     <a href="{{ url('background') }}" class="btn btn-secondary">Back</a>

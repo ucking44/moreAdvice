@@ -18,9 +18,6 @@ class NewsController extends Controller
     public function index()
     {
         $news = News::all();
-        // $banner = Banner::all();
-        // $media = Media::all();
-        // $background = Background::all();
         return view('background', compact('background', 'media', 'banner', 'news'));
     }
 

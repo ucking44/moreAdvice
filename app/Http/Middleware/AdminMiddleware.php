@@ -24,6 +24,5 @@ class AdminMiddleware
         else {
             return redirect('/home')->with('status', 'YOU ARE NOT ALLOWED TO ACCESS ADMIN DASHBOARD');
         }
-        //return $next($request);
     }
 }
